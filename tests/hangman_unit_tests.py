@@ -2,7 +2,7 @@ import unittest
 import random
 import string
 
-from hangman import Hangman
+from hangman.hangman import Hangman
 
 
 class HangmanTests(unittest.TestCase):

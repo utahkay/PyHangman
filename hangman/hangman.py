@@ -1,5 +1,6 @@
 import random
 import string
+import pkg_resources
 
 
 class Hangman:
@@ -10,8 +11,9 @@ class Hangman:
         self._guess = [None] * len(self._secret_word)
 
     def _load_words(self):
-        filename = 'sowpods.txt'
-        with open(filename, 'r') as f:
+#        filename = 'sowpods.txt'
+#        with open(filename, 'r') as f:
+        with pkg_resources.resource_stream(__name__, 'sowpods.txt') as f:
             words = [line.strip() for line in f.readlines()]
         return words
 

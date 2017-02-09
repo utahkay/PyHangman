@@ -1,3 +1,5 @@
 .hypothesis/
 .idea/
 __pycache__/
+dist/
+*.egg-info/

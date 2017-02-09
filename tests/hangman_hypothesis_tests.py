@@ -4,7 +4,7 @@ from hypothesis.strategies import none
 from hypothesis.strategies import text
 from hypothesis.strategies import characters
 
-from hangman import Hangman
+from hangman.hangman import Hangman
 
 VALID_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 KNOWN_WORD = "SECRETWORD"
